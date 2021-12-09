@@ -1,0 +1,100 @@
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* body {
+    background-image: url('https://res.cloudinary.com/dyzeuqi75/image/upload/v1634142423/Windows_11_Wallpaper_30_qggg1d.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;   
+} */
+
+
+
+
+p,li{
+ color: #0f121b; 
+ font-size: 1.2rem;
+}
+
+
+
+li{
+  
+  color: white;
+}
+span{
+  color: rgb(0, 0, 0);
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  color: #480470;
+  font-weight: 900;
+  
+}
+
+
+
+
+a {  
+  text-decoration: none;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #7534343a;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #3b773b; 
+}
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;   
+}
+
+@media only screen
+and(min-device-width: 320px)
+and(max-device-width: 568px) {
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;   
+}
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #09052e;
+  background-color: #480470;
+  border-color: #ffffff;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #09052e;
+  background-color: #bb82d6;
+  border: 1px solid #dee2e6;
+}
+
+
