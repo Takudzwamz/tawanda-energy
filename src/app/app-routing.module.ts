@@ -8,6 +8,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { FooterDetailsComponent } from './footer-details/footer-details.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RenewableEnergyInvestmentComponent } from './renewable-energy-investment/renewable-energy-investment.component';
 
 
 
@@ -43,6 +45,14 @@ const routes: Routes = [
     path: 'contact_us',
     component: ContactUsComponent,
   },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+  },
+  {
+    path: 'renewable-energy-investment',
+    component: RenewableEnergyInvestmentComponent,
+  }
 
 
 ];

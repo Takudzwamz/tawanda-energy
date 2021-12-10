@@ -32,12 +32,22 @@ border-radius: 5px;
               class="nav-link text-#ff5e14" [routerLink]="['/services']">Services</a>
 
           </li>
-
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#485785" class="nav-link "
+              [routerLink]="['about-us']">About Us</a>
+          </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#485785"
               class="nav-link text-#ff5e14" [routerLink]="['/contact_us']">Contact Us</a>
 
           </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#485785"
+              class="nav-link text-#ff5e14" [routerLink]="['/renewable-energy-investment']">Renewable Energy Investment</a>
+
+          </li>
+
+          
 
         </ul>
       </div>

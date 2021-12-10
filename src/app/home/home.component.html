@@ -1,77 +1,81 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
-<section style="
-                        background: rgba(255, 255, 255, 0.1);
-                        
-                        backdrop-filter: blur(10px);
-                        -webkit-backdrop-filter: blur(10px);
-                        border-radius: 10px;
-                        
-                        border: 1px solid transparent;
-                      ">
-  <div id="colorlib-about">
+
+
+
+
+<!--
+<section >
+
+
+<header class="header-rounded-images">
+  
+  <div class="page-header min-vh-100">
     <div class="container">
-
       <div class="row">
-        <div class="col-md-12 animate-box">
-          <div class="owl-carousel3">
-            <div class="item">
-
-              <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
-                [showNavigationIndicators]="showNavigationIndicators">
-                <ng-template ngbSlide *ngFor="let image of images; index as i; index as j">
-                  <div class="picsum-img-wrapper">
-                    <img [src]="image" alt="Random slide" class="pic" />
-                  </div>
-
-                  <div style="
-                        background: rgba(255, 255, 255, 0.1);
-                        
-                        backdrop-filter: blur(10px);
-                        -webkit-backdrop-filter: blur(10px);
-                        border-radius: 20px;
-                        margin-top:200px;
-                        border: 1px solid transparent;
-                      " class="carousel-caption">
-                    <h1>{{ titles[i] }}</h1>
-                    <p style="margin: 5px;">{{ discription[j] }}</p>
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                      <a href="https://drive.google.com/file/d/1MtKWouA6bAdb3basRonDenmOYkPqV8PW/view?usp=sharing"
-                         class="btn btn-success active">
-                        <i class="fas fa-download"></i> Services
-                      </a>
-                    </div>
-                  </div>
-                </ng-template>
-              </ngb-carousel>
+        <ngb-carousel class="col-md-12"   *ngIf="images" [showNavigationArrows]="showNavigationArrows" [showNavigationIndicators]="showNavigationIndicators">
+          <ng-template ngbSlide *ngFor="let image of images; index as i; index as j">
+            
+            <div class="col-lg-6 text-lg-start text-center py-sm-0 py-7">
+              
+              <h1 class="text-white">{{ titles[i] }}</h1>
+              <p class="text-white text-lg-start text-center pe-5 mt-4">{{ discription[j] }}</p>
+              <br />
+              <div class="buttons">
+                <button type="button" class="btn btn-lg bg-gradient-primary btn-rounded">Contact Us</button>
+                <button type="button" class="btn btn-lg btn-outline-white btn-rounded ms-xl-3">Read More</button>
+              </div>
+              <div class="row mt-5 justify-content-start">
+                <div class="col-md-3 col-6 p-0">
+                  <img class="w-50"
+                    [src]="image" alt="Random slide"
+                    alt="logo">
+                </div>
+                <div class="col-md-3 col-6 p-0">
+                  <img class="w-50"
+                    [src]="image" alt="Random slide"
+                    alt="logo">
+                </div>
+                <div class="col-md-3 col-6 p-0">
+                  <img class="w-50"
+                    [src]="image" alt="Random slide"
+                    alt="logo">
+                </div>
+                <div class="col-md-3 col-6 p-0">
+                  <img class="w-50"
+                    [src]="image" alt="Random slide"
+                    alt="logo">
+                </div>
+              </div>
             </div>
-
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr class="hr-line1" />
-        </div>
+            <div class="col-lg-6 text-end position-relative">
+              <img class="w-100"
+              [src]="image" alt="Random slide" alt="logo">
+            </div>
+          </ng-template>
+        </ngb-carousel>
+        
       </div>
     </div>
 
+
+
+    <div
+      class="min-vh-75 w-50 blur-section blur-gradient-primary position-absolute border-top-start-radius-0 border-top-end-radius-0 border-bottom-end-radius-0 border-radius-section mt-n8 me-n4 top-0 end-0 d-lg-block d-none">
+    </div>
+
   </div>
+
+</header>
+
+  
 </section>
+  -->
 
 
-<section style="
-                        background: rgba(255, 255, 255, 0.1);
-                        
-                        backdrop-filter: blur(10px);
-                        -webkit-backdrop-filter: blur(10px);
-                        border-radius: 10px;
-                        
-                        border: 1px solid transparent;
-                      ">
+
+
+<section style="  background: rgba(255, 255, 255, 0.1);  backdrop-filter: blur(10px);  -webkit-backdrop-filter: blur(10px);  border-radius: 10px;  border: 1px solid transparent;  ">
   <div id="colorlib-about">
     <div class="container">
 
@@ -81,8 +85,9 @@
           <div class="about-desc">
             <div class="owl-carousel3">
               <div class="item">
-                <h2><span style="color:rgb(209, 5, 5); font-family:'Segoe UI';">Tawanda
-                  </span><span style="color:#43cc29; font-family:'Segoe UI';">Energy</span></h2>
+                <h2><span class="display-5 fw-bold" style="color:rgb(209, 5, 5); font-family:'Segoe UI';">Tawanda
+                  </span><span class="display-5 fw-bold" style="color:#43cc29; font-family:'Segoe UI';">Energy</span>
+                </h2>
               </div>
               <div class="item">
                 <h3><span style="color:rgb(209, 5, 5)">Fuelling </span><span style="color:rgb(68, 68, 204)">a cleaner
@@ -119,12 +124,12 @@
                     class="fab fa-2x fa-github-square"></i></a>
               </p>
               <p><a href="/contact_us" class="btn btn-success active">Contact Us</a></p>
-                  
+
             </div>
           </div>
         </div>
 
-        
+
 
 
         <div class="col-md-6 animate-box">
@@ -138,19 +143,11 @@
                     <img [src]="image" alt="Random slide" class="pic" />
                   </div>
 
-                  <div style="
-                        background: rgba(255, 255, 255, 0.1);
-                        
-                        backdrop-filter: blur(10px);
-                        -webkit-backdrop-filter: blur(10px);
-                        border-radius: 20px;
-                        margin-top:200px;
-                        border: 1px solid transparent;
-                      " class="carousel-caption">
-                    <h1>{{ zaglavanie[i] }}</h1>
-                    
+                  <div  class="carousel-caption">
+                  <!--  <h1>{{ zaglavanie[i] }}</h1> -->
+
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                     <!-- <a href="https://drive.google.com/file/d/1MtKWouA6bAdb3basRonDenmOYkPqV8PW/view?usp=sharing"
+                      <!-- <a href="https://drive.google.com/file/d/1MtKWouA6bAdb3basRonDenmOYkPqV8PW/view?usp=sharing"
                         style="
                             color: #ffffff;
                             background-color: #480470;
@@ -171,7 +168,7 @@
           </div>
         </div>
 
-        
+
 
 
       </div>
@@ -194,7 +191,7 @@
       <div class="col-md-12 my-5">
         <div class="welcome-content text-center">
 
-          <h2>Fuelling a cleaner future</h2>
+          <h2 class="display-5 fw-bold">Fuelling a cleaner future</h2>
 
           <p>
             Tawanda Energy will create a decentralized, nutrient and energy hubs by converting end of
@@ -218,7 +215,7 @@
             stakeholders and reaches an untapped market with tremendous growth potential.
           </p>
 
-          <h2>Our Vision & Mission</h2>
+          <h2 class="display-5 fw-bold">Our Vision & Mission</h2>
           <p>
             is to be driving force for social, environmental, and economic
             benefits by producing gaseous and liquid climate-neutral energy carriers and are a project that
@@ -232,21 +229,7 @@
       <div class="col-md-12">
         <div class="welcome-content text-center">
 
-          <h2>Areas we service</h2>
-
-          <p >
-            Tawanda’s headquarters are located in the City of Mutare; where from the past 5 years of its
-            existence has been converting two waste water treatment plants into biorefineries. The
-            concept of a bio-refinery is the sustainable processing of biomass into a spectrum of
-            marketable products and energy. It is an economy based on innovative and cost efficient use
-            of waste for the production of both bio-based products and bio-energy. A bio-refinery is
-            analogous to the modern day oil refinery where multiple products are produced from crude
-            oil. All our activities are complimented, enabled and strengthened by smart partnerships with
-            like-minded enterprises throughout the country.
-
-          </p>
-
-          <h2>Areas we service</h2>
+          <h2 class="display-5 fw-bold">Areas we service</h2>
 
           <p>
             Tawanda’s headquarters are located in the City of Mutare; where from the past 5 years of its
@@ -260,7 +243,21 @@
 
           </p>
 
-          <h2>Industries we service</h2>
+          <h2 class="display-5 fw-bold">Areas we service</h2>
+
+          <p>
+            Tawanda’s headquarters are located in the City of Mutare; where from the past 5 years of its
+            existence has been converting two waste water treatment plants into biorefineries. The
+            concept of a bio-refinery is the sustainable processing of biomass into a spectrum of
+            marketable products and energy. It is an economy based on innovative and cost efficient use
+            of waste for the production of both bio-based products and bio-energy. A bio-refinery is
+            analogous to the modern day oil refinery where multiple products are produced from crude
+            oil. All our activities are complimented, enabled and strengthened by smart partnerships with
+            like-minded enterprises throughout the country.
+
+          </p>
+
+          <h2 class="display-5 fw-bold">Industries we service</h2>
 
           <!--Circle Cards-->
           <div class="row">
@@ -268,7 +265,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Corporates</h5>
-                  
+
                 </div>
               </div>
             </div>
@@ -276,7 +273,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Farms</h5>
-                  
+
                 </div>
               </div>
             </div>
@@ -284,7 +281,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Government Department </h5>
-                  
+
                 </div>
               </div>
             </div>
@@ -292,7 +289,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Municipalities</h5>
-                  
+
                 </div>
               </div>
             </div>
@@ -300,17 +297,17 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Private Clients</h5>
-                  
+
                 </div>
               </div>
             </div>
-            
-            
+
+
           </div>
           <!--Circle Cards-->
-          
 
-          
+
+
         </div>
       </div>
     </div>
@@ -682,7 +679,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="welcome-content text-center">
-          <h2 class="item">FAQ's</h2>
+          <h2 class="display-5 fw-bold">FAQ's</h2>
 
           <p style="text-align:center;">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -697,7 +694,9 @@
 
             <details>
               <summary class="disable-select">What materials do we use?</summary>
-              <div>All of our products are made with PLA Plastic Filament. PLA Is the most commonly used 3d printing material. it is bio-degradable and strong enough to be used for a lot of applications including home products, spare parts etc.</div>
+              <div>All of our products are made with PLA Plastic Filament. PLA Is the most commonly used 3d printing
+                material. it is bio-degradable and strong enough to be used for a lot of applications including home
+                products, spare parts etc.</div>
             </details>
             <details>
               <summary class="disable-select">How do I order?</summary>
@@ -705,16 +704,19 @@
             </details>
             <details>
               <summary class="disable-select">How long will my order take to process?</summary>
-              <div>3D printing is a slow process with some prints taking a few minutes to completre and some several days.
+              <div>3D printing is a slow process with some prints taking a few minutes to completre and some several
+                days.
                 How long an order takes depends entirely on how big the order is.</div>
             </details>
             <details>
               <summary class="disable-select">Can I buy in-store?</summary>
-              <div>Unfortunately we are not a walk in store yet, but you can visit our factory/studio at the provided address below.</div>
+              <div>Unfortunately we are not a walk in store yet, but you can visit our factory/studio at the provided
+                address below.</div>
             </details>
             <details>
               <summary class="disable-select">Can I order over the phone or email?</summary>
-              <div>To place an order over the phone or email, contact our customer services team on 0658435277 or info@3dprintingstudio.co.za .</div>
+              <div>To place an order over the phone or email, contact our customer services team on 0658435277 or
+                info@3dprintingstudio.co.za .</div>
             </details>
             <details>
               <summary class="disable-select">Does 3D Printing Studio offer Free delivery?</summary>
@@ -722,7 +724,8 @@
             </details>
             <details>
               <summary class="disable-select">Is it safe to shop online with you?</summary>
-              <div>Yes. We guarantee that our website is secured and certified. Your payment is processed securely by Payfast, which is one
+              <div>Yes. We guarantee that our website is secured and certified. Your payment is processed securely by
+                Payfast, which is one
                 of the leading payment gateways in South Africa.</div>
             </details>
           </div>
@@ -736,3 +739,5 @@
     </div>
   </div>
 </section>
+
+

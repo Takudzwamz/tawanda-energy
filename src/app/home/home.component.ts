@@ -45,13 +45,13 @@ export class HomeComponent implements OnInit {
   showNavigationArrows = false;
   showNavigationIndicators = false;
   public images = [
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054776/WhatsApp_Image_2021-11-04_at_21.31.18_5_f5tecq.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639135303/1639134625414_alauuv.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054778/WhatsApp_Image_2021-11-04_at_21.31.18_8_lv0he9.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639135303/1639134777604_dywlbp.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054775/WhatsApp_Image_2021-11-04_at_21.31.18_2_l0ne0i.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639134249/1639134109178_zabd4y.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054777/WhatsApp_Image_2021-11-04_at_21.31.18_7_j5muwr.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639135302/1639134745907_brrc8u.png',
   ];
   titles = ['iOS', 'Android', 'Web Apps', 'Cross-platform Apps'];
   discription = [
@@ -61,13 +61,14 @@ export class HomeComponent implements OnInit {
     'Same app working on iOS, Android and Web ',
   ];
   public foto = [
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054776/WhatsApp_Image_2021-11-04_at_21.31.18_5_f5tecq.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156332/khumba-energy-innovation-meets-sustainable-energy_uofgyd.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054778/WhatsApp_Image_2021-11-04_at_21.31.18_8_lv0he9.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156332/khumba-energy-360-sustainable-solutions_b8ouha.png',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639157125/kisspng-recycling-symbol-reuse-waste-minimisation-energy-and-environmental-protection-5a92ced8e34617.1049894015195706489309_1_l4diwe.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054775/WhatsApp_Image_2021-11-04_at_21.31.18_2_l0ne0i.jpg',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156887/5a28c3c29baeb2.6895204515126209946377_rqpq5x.png',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054777/WhatsApp_Image_2021-11-04_at_21.31.18_7_j5muwr.jpg',
+    
   ];
   zaglavanie = ['iOS', 'Android', 'Web Apps', 'Cross-platform Apps'];
   opisaniye = [

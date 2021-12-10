@@ -25,6 +25,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { CategoryComponent } from './category/category.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterDetailsComponent } from './footer-details/footer-details.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RenewableEnergyInvestmentComponent } from './renewable-energy-investment/renewable-energy-investment.component';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { FooterDetailsComponent } from './footer-details/footer-details.componen
     ArticleDetailsComponent,
     CategoryComponent,
     FooterDetailsComponent,
+    AboutUsComponent,
+    RenewableEnergyInvestmentComponent,
 
   ],
   imports: [
