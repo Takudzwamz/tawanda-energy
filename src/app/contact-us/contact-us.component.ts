@@ -33,24 +33,12 @@ export class ContactUsComponent implements OnInit {
       ]),
       Comment: new FormControl('', [Validators.required]),
     });
-    this.title.setTitle('Contact Me');
+    this.title.setTitle('Contact Us');
     this.metaTagService.updateTag({
       name: 'description',
-      content: 'Contact Takudzwa Mupanesure',
+      content: 'Contact Tawanda Energy',
     });
   }
 
-  onSubmit(FormData) {
-    console.log(FormData);
-    this.contact.PostMessage(FormData).subscribe(
-      (response) => {
-        location.href = 'https://mailthis.to/confirm';
-        console.log(response);
-      },
-      (error) => {
-        console.warn(error.responseText);
-        console.log({ error });
-      }
-    );
-  }
+  
 }

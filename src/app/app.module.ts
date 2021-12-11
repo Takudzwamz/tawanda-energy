@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { PoliciesComponent } from './policies/policies.component';
+
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -17,12 +17,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatTableModule } from '@angular/material/table';
 
-import { CentersComponent } from './centers/centers.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { GraphQLModule } from './graphql.module';
-import { ArticleDetailsComponent } from './article-details/article-details.component';
+
 import { MarkdownModule } from 'ngx-markdown';
-import { CategoryComponent } from './category/category.component';
+
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FooterDetailsComponent } from './footer-details/footer-details.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -35,14 +34,12 @@ import { RenewableEnergyInvestmentComponent } from './renewable-energy-investmen
     AppComponent,
     FooterComponent,
     HomeComponent,
-    PoliciesComponent,
+
     NavBarComponent,
     ContactUsComponent,
 
-    CentersComponent,
     ArticlesComponent,
-    ArticleDetailsComponent,
-    CategoryComponent,
+
     FooterDetailsComponent,
     AboutUsComponent,
     RenewableEnergyInvestmentComponent,

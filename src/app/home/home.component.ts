@@ -30,8 +30,9 @@ export class HomeComponent implements OnInit {
 
   constructor(
     config: NgbCarouselConfig,
-    private title: Title,
+    
     private apollo: Apollo,
+    private title: Title,
     private canonicalService: CanonicalService
   ) {
     // customize default values of carousels used by this component tree
@@ -42,7 +43,7 @@ export class HomeComponent implements OnInit {
     config.keyboard = true;
     config.pauseOnHover = true;
   }
-  showNavigationArrows = false;
+  showNavigationArrows = true;
   showNavigationIndicators = false;
   public images = [
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639135303/1639134625414_alauuv.png',
@@ -63,8 +64,8 @@ export class HomeComponent implements OnInit {
   public foto = [
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156332/khumba-energy-innovation-meets-sustainable-energy_uofgyd.png',
 
-    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156332/khumba-energy-360-sustainable-solutions_b8ouha.png',
-    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639157125/kisspng-recycling-symbol-reuse-waste-minimisation-energy-and-environmental-protection-5a92ced8e34617.1049894015195706489309_1_l4diwe.png',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639246415/kisspng-light-renewable-energy-solar-energy-vector-green-energy-light-bulb-5a7f5c1b6011b8.9373666215182960913935_rkklau.png',
+    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639170573/kisspng-environmentally-friendly-recycling-natural-environ-eco-5abdc250393682.7650898815223854882344-min_lfrbe8.png',
 
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156887/5a28c3c29baeb2.6895204515126209946377_rqpq5x.png',
 
@@ -82,7 +83,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.canonicalService.setCanonicalURL();
-    this.title.setTitle('Takudzwa Mupanesure (Sputnik Tech)');
+    this.title.setTitle('Tawanda Energy');
     this.queryCategories = this.apollo
       .watchQuery({
         query: CATEGORIES_QUERY,

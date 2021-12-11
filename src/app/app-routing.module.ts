@@ -1,12 +1,11 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ArticleDetailsComponent } from './article-details/article-details.component';
+
 import { ArticlesComponent } from './articles/articles.component';
-import { CategoryComponent } from './category/category.component';
-import { CentersComponent } from './centers/centers.component';
+
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
-import { PoliciesComponent } from './policies/policies.component';
+
 import { FooterDetailsComponent } from './footer-details/footer-details.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RenewableEnergyInvestmentComponent } from './renewable-energy-investment/renewable-energy-investment.component';
@@ -19,30 +18,15 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'why_voting',
-    component: PoliciesComponent,
-  },
-  {
-    path: 'centers',
-    component: CentersComponent,
-  },
-  {
     path: 'services',
     component: ArticlesComponent,
   },
-
-  { path: 'article/:id',
-    component: ArticleDetailsComponent
-  },
-  { path: 'news-category/:id',
-    component: CategoryComponent
-  },
   {
-    path: 'tawanda_energy',
+    path: 'tawanda-energy',
     component: FooterDetailsComponent
   },
   {
-    path: 'contact_us',
+    path: 'contact-us',
     component: ContactUsComponent,
   },
   {
@@ -52,7 +36,11 @@ const routes: Routes = [
   {
     path: 'renewable-energy-investment',
     component: RenewableEnergyInvestmentComponent,
-  }
+  },
+  {
+    path: '**',
+    component: HomeComponent,
+  },
 
 
 ];

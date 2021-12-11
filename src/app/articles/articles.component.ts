@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 import CATEGORIES_QUERY from '../apollo/queries/category/categories';
 import ARTICLES_QUERY from '../apollo/queries/articles/articles'; 
 import { Subscription } from 'rxjs';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { CanonicalService } from '../services/canonical.service';
 
 @Component({
@@ -26,12 +26,17 @@ export class ArticlesComponent implements OnInit {
   constructor(
     private apollo: Apollo,
     private title: Title,
+    private metaTagService: Meta,
     private canonicalService: CanonicalService
   ) {}
 
   ngOnInit(): void {
     this.canonicalService.setCanonicalURL();
-    this.title.setTitle('Projects Page');
+    this.title.setTitle('Services');
+    this.metaTagService.updateTag({
+      name: 'description',
+      content: 'Our Services',
+    });
     this.queryCategories = this.apollo
       .watchQuery({
         query: CATEGORIES_QUERY,

@@ -7,7 +7,7 @@ import { Meta } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
- // title = '#RegisterToVoteZW';
+
 
   constructor(private metaTagService: Meta) {}
 
@@ -17,26 +17,26 @@ export class AppComponent implements OnInit {
       {
         name: 'keywords',
         content:
-          'Takudzwa, Mupanesure, CSS, HTML, .Net, C#, Angular, Software development, Computer science, E-commerce, Android apps, iOS apps, Windows, .Net 6, ASP.NET Core, SQL, No- SQL, Mongodb, Mysql, Digital Ocean, Github, Software developer, dev, web',
+          'Tawanda Energy, Biogas, Energy, Renewable, biofuels, petrochemicals, climate, Zim, Zimbabwe, Mutare, Solar, Electricity, Power, Tawanda, Sustainable, Global warming, Recycle, Waste, Recycling, Environmental friendly',
       },
       { name: 'robots', content: 'index, follow' },
       
       {
         name: 'description',
         content:
-          'I am a Software Engineer who is passionate about software advancements. If you like what I do please dont hesitate to contact me, lets work together',
+          'Tawanda Energy is a developer, owner and operator of waste to energy renewable power assets in Zimbabwe and is positioned to become a key player in the energy transition sector in Africa, by providing services directly to the general public or as a wholesaler to public operators.',
       },
       { name: 'author', content: 'Sputnik Tech' },
-      { name: 'twitter:card', content: 'Takudzwa Mupanesure' },
+      { name: 'twitter:card', content: 'Tawanda Energy' },
       {
         name: 'twitter:title',
         content:
-          'Software is the backbone of the modern society',
+          'Tawanda Energy',
       },
       {
         name: 'twitter:description',
         content:
-          'I am a Software Engineer who is passionate about software advancements. If you like what I do please dont hesitate to contact me, lets work together',
+          'Tawanda Energy is a developer, owner and operator of waste to energy renewable power assets in Zimbabwe and is positioned to become a key player in the energy transition sector in Africa, by providing services directly to the general public or as a wholesaler to public operators.',
       },
     ]);
   }
