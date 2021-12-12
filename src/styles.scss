@@ -2,6 +2,7 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
 
 /* body {
     background-image: url('https://res.cloudinary.com/dyzeuqi75/image/upload/v1634142423/Windows_11_Wallpaper_30_qggg1d.jpg');
@@ -19,7 +20,7 @@
 p,li{
  color: #0f121b; 
  font-size: 1.2rem;
- font-family: cursive;
+ font-family: 'Work Sans', sans-serif;
 }
 
 .has-drop-cap:first-letter {

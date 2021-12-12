@@ -8,17 +8,26 @@
     color: #0f121b;
 }
 
-a{
-   color: #0f121b;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+
+
+h1,
+h2,
+h3 {
+  color: #32991f;
+  font-family: 'Work Sans', sans-serif;
 }
 
-h1,h2,h3{
-    color: #32991f;
-  }
-  
-  h4,h5,h6{
-    color: crimson;
-  }
-  i{
-    color: #c9c921;
-  }
+h4,
+h5,
+h6 {
+  color: crimson;
+  font-family: 'Work Sans', sans-serif;
+}
+i {
+  color: #c9c921;
+}
+a{
+  font-family: 'Work Sans', sans-serif;
+  color: #0f121b;
+}

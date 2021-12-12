@@ -40,7 +40,7 @@ table {
 
 .welcome-content h2 {
   //font-weight: 700;
- // font-size: 26px;
+  // font-size: 26px;
 }
 
 .welcome-content p {
@@ -166,10 +166,8 @@ article.work {
   padding: 2px 8px;
 }
 
-
-
-$font-primary:  sans-serif;
-$font-secondary:  sans-serif;
+$font-primary: sans-serif;
+$font-secondary: sans-serif;
 // Overrides
 $grid-gutter-width: 40px !default;
 $border-radius-base: 4px !default;
@@ -188,18 +186,27 @@ $brand-body-bg: #f9f7f7;
 $input-border-focus: $brand-primary !default;
 $form-group-margin-bottom: 30px !default;
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   color: #32991f;
+  font-family: 'Work Sans', sans-serif;
 }
 
-h4,h5,h6{
+h4,
+h5,
+h6 {
   color: crimson;
+  font-family: 'Work Sans', sans-serif;
 }
-i{
+i {
   color: #c9c921;
 }
+a{
+  font-family: 'Work Sans', sans-serif;
+}
 
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
 
 //ABOUT
 .about-desc {
@@ -218,18 +225,16 @@ i{
     //padding-left: 4em;
     position: relative;
   }
-  
 }
 
 .pic {
   object-fit: fill;
-  height:450px;
+  height: 450px;
   width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 10px;
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -250,14 +255,14 @@ i{
   .pic {
     height: 620px;
   }
-} 
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .pic {
     height: 650px;
   }
-} 
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -265,7 +270,6 @@ i{
     height: 620px;
   }
 }
-
 
 .bold {
   position: absolute;
@@ -278,42 +282,19 @@ i{
   font-weight: 700;
 }
 
-
 .text-center {
   text-align: center;
 }
-.center{
+.center {
   margin: auto;
   width: 70%;
   padding: 10px;
   justify-content: flex;
 }
 
-h2 {
-  margin: 0 0 30px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main{
+.main {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-h1 {
-    //font-size: 24px;
-    font-weight: 400;
-    
 }
 
 img {
@@ -321,8 +302,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 .cards {
   display: flex;
@@ -355,16 +334,15 @@ img {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  
+
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-.card:hover 
-{
-transform: translateY(-20px);
-transition: 0.5s;
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.5s;
 }
 
 .card_content {
@@ -385,23 +363,22 @@ transition: 0.5s;
   color: #000000;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;    
+  margin-bottom: 1.25rem;
   font-weight: 500;
 }
+
+.fab.fa-instagram {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
 
 
 @import "./scss/card.scss";
 @import "./scss/faqs.scss";
 @import "./scss/text.scss";
 @import "./scss/room.scss";
-
-
-
-
-
-
-
-
-
-
-

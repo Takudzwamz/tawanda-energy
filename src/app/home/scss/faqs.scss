@@ -21,12 +21,12 @@
     }
   }
   summary {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(50, 212, 35, 0.1);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    //color: #0f121b;
+    color: #0f121b;
     margin-bottom: 5px;
     padding: 10px;
     //text-transform:capitalize;
@@ -39,7 +39,7 @@
       margin-top: 20px;
       margin-bottom: 20px;
       padding: 0 10px;
-      color: #485785;
+      color: #151e36;
       text-align:start;
       font-family: "Segoe UI", sans-serif;
     }
@@ -53,3 +53,27 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+
+
+h1,
+h2,
+h3 {
+  color: #32991f;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  color: crimson;
+  font-family: 'Work Sans', sans-serif;
+}
+i {
+  color: #c9c921;
+}
+a{
+  font-family: 'Work Sans', sans-serif;
+}
+
