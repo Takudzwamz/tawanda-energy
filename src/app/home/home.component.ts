@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156332/khumba-energy-innovation-meets-sustainable-energy_uofgyd.png',
 
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639246415/kisspng-light-renewable-energy-solar-energy-vector-green-energy-light-bulb-5a7f5c1b6011b8.9373666215182960913935_rkklau.png',
-    'https://res.cloudinary.com/sputnik-tech/image/upload/v1639170573/kisspng-environmentally-friendly-recycling-natural-environ-eco-5abdc250393682.7650898815223854882344-min_lfrbe8.png',
+    //'https://res.cloudinary.com/sputnik-tech/image/upload/v1639170573/kisspng-environmentally-friendly-recycling-natural-environ-eco-5abdc250393682.7650898815223854882344-min_lfrbe8.png',
 
     'https://res.cloudinary.com/sputnik-tech/image/upload/v1639156887/5a28c3c29baeb2.6895204515126209946377_rqpq5x.png',
 
